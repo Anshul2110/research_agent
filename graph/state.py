@@ -6,13 +6,14 @@ class Paper(TypedDict):
     authors: str
     year: str
     url: str
-    source: str           # "arxiv" | "scholar" | "semantic"
-    citations: int
+    # "arxiv" | "scholar" | "semantic"
+    source: str 
 
 class ResearchState(TypedDict):
     query: str
-    sources: List[str]    # which scrapers to run
+     # which scrapers to run    sources: List[str]   
     raw_papers: List[Paper]
     ranked_papers: List[Paper]
-    summaries: List[dict]  # {title, summary, url, year}
+    # {title, summary, url, year}
+    summaries: List[dict]  
     error: Optional[str]
