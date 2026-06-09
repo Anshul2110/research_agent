@@ -1,0 +1,155 @@
+[
+    {
+        "title": "Enhancing Human-Like Responses in Large Language Models",
+        "abstract": "This paper explores the advancements in making large language models (LLMs) more human-like. We focus on techniques that enhance natural language understanding, conversational coherence, and emotional intelligence in AI systems. The study evaluates various approaches, including fine-tuning with diverse datasets, incorporating psychological principles, and designing models that better mimic human reasoning patterns. Our findings demonstrate that these enhancements not only improve user interactions but also open new possibilities for AI applications across different domains. Future work will address the ethical implications and potential biases introduced by these human-like attributes.",
+        "authors": "Ethem Ya\u011f\u0131z \u00c7al\u0131k, Talha R\u00fczgar Akku\u015f",
+        "publishedYear": "2025-01-09T07:44:06Z",
+        "url": "https://arxiv.org/abs/2501.05032"
+    },
+    {
+        "title": "Is Self-knowledge and Action Consistent or Not: Investigating Large Language Model's Personality",
+        "abstract": "In this study, we delve into the validity of conventional personality questionnaires in capturing the human-like personality traits of Large Language Models (LLMs). Our objective is to assess the congruence between the personality traits LLMs claim to possess and their demonstrated tendencies in real-world scenarios. By conducting an extensive examination of LLM outputs against observed human response patterns, we aim to understand the disjunction between self-knowledge and action in LLMs.",
+        "authors": "Yiming Ai, Zhiwei He, Ziyin Zhang, Wenhong Zhu, Hongkun Hao, Kai Yu, Lingjun Chen, Rui Wang",
+        "publishedYear": "2024-02-22T16:32:08Z",
+        "url": "https://arxiv.org/abs/2402.14679"
+    },
+    {
+        "title": "Large Language Models Lack Understanding of Character Composition of Words",
+        "abstract": "Large language models (LLMs) have demonstrated remarkable performances on a wide range of natural language tasks. Yet, LLMs' successes have been largely restricted to tasks concerning words, sentences, or documents, and it remains questionable how much they understand the minimal units of text, namely characters. In this paper, we examine contemporary LLMs regarding their ability to understand character composition of words, and show that most of them fail to reliably carry out even the simple tasks that can be handled by humans with perfection. We analyze their behaviors with comparison to token level performances, and discuss the potential directions for future research.",
+        "authors": "Andrew Shin, Kunitake Kaneko",
+        "publishedYear": "2024-05-18T18:08:58Z",
+        "url": "https://arxiv.org/abs/2405.11357"
+    },
+    {
+        "title": "Unmasking the Shadows of AI: Investigating Deceptive Capabilities in Large Language Models",
+        "abstract": "This research critically navigates the intricate landscape of AI deception, concentrating on deceptive behaviours of Large Language Models (LLMs). My objective is to elucidate this issue, examine the discourse surrounding it, and subsequently delve into its categorization and ramifications. The essay initiates with an evaluation of the AI Safety Summit 2023 (ASS) and introduction of LLMs, emphasising multidimensional biases that underlie their deceptive behaviours.The literature review covers four types of deception categorised: Strategic deception, Imitation, Sycophancy, and Unfaithful Reasoning, along with the social implications and risks they entail. Lastly, I take an evaluative stance on various aspects related to navigating the persistent challenges of the deceptive AI. This encompasses considerations of international collaborative governance, the reconfigured engagement of individuals with AI, proposal of practical adjustments, and specific elements of digital education.",
+        "authors": "Linge Guo",
+        "publishedYear": "2024-02-07T00:21:46Z",
+        "url": "https://arxiv.org/abs/2403.09676"
+    },
+    {
+        "title": "Making Large Language Models Better Reasoners with Alignment",
+        "abstract": "Reasoning is a cognitive process of using evidence to reach a sound conclusion. The reasoning capability is essential for large language models (LLMs) to serve as the brain of the artificial general intelligence agent. Recent studies reveal that fine-tuning LLMs on data with the chain of thought (COT) reasoning process can significantly enhance their reasoning capabilities. However, we find that the fine-tuned LLMs suffer from an \\textit{Assessment Misalignment} problem, i.e., they frequently assign higher scores to subpar COTs, leading to potential limitations in their reasoning abilities. To address this problem, we introduce an \\textit{Alignment Fine-Tuning (AFT)} paradigm, which involves three steps: 1) fine-tuning LLMs with COT training data; 2) generating multiple COT responses for each question, and categorizing them into positive and negative ones based on whether they achieve the correct answer; 3) calibrating the scores of positive and negative responses given by LLMs with a novel constraint alignment loss. Specifically, the constraint alignment loss has two objectives: a) Alignment, which guarantees that positive scores surpass negative scores to encourage answers with high-quality COTs; b) Constraint, which keeps the negative scores confined to a reasonable range to prevent the model degradation. Beyond just the binary positive and negative feedback, the constraint alignment loss can be seamlessly adapted to the ranking situations when ranking feedback is accessible. Furthermore, we also delve deeply into recent ranking-based alignment methods, such as DPO, RRHF, and PRO, and discover that the constraint, which has been overlooked by these approaches, is also crucial for their performance. Extensive experiments on four reasoning benchmarks with both binary and ranking feedback demonstrate the effectiveness of AFT.",
+        "authors": "Peiyi Wang, Lei Li, Liang Chen, Feifan Song, Binghuai Lin, Yunbo Cao, Tianyu Liu, Zhifang Sui",
+        "publishedYear": "2023-09-05T11:32:48Z",
+        "url": "https://arxiv.org/abs/2309.02144"
+    },
+    {
+        "title": "Generative AI: S. Feuerriegel et al.",
+        "abstract": "\u2026 In this Catchword article, we provide a conceptualization of generative AI as an entity in \u2026 \ngenerative AI and provide an agenda for BISE research. Previous papers discuss generative AI \u2026",
+        "authors": [
+            "S Feuerriegel",
+            "J Hartmann",
+            "C Janiesch\u2026",
+            "information\u00a0\u2026"
+        ],
+        "publishedYear": 2024,
+        "url": "https://link.springer.com/article/10.1007/s12599-023-00834-7"
+    },
+    {
+        "title": "Generative ai meets responsible ai: Practical challenges and opportunities",
+        "abstract": "\u2026 the disruptive impact of generative AI models and systems, responsible AI techniques need \nto be incorporated when developing and deploying LLMs and other generative AI models to \u2026",
+        "authors": [
+            "K Kenthapadi",
+            "H Lakkaraju"
+        ],
+        "publishedYear": 2023,
+        "url": "https://dl.acm.org/doi/abs/10.1145/3580305.3599557"
+    },
+    {
+        "title": "Generative artificial intelligence in the metaverse era",
+        "abstract": "\u2026 Generative AI provides innovative approaches for content \u2026 generative AI in the breakthrough \nof metaverse technology and offers insights for increasing the effectiveness of generative AI \u2026",
+        "authors": [
+            "Z Lv"
+        ],
+        "publishedYear": 2023,
+        "url": "https://www.sciencedirect.com/science/article/pii/S2667241323000198"
+    },
+    {
+        "title": "Generative AI: A review on models and applications",
+        "abstract": "\u2026 Abstract\u2014Generative Artificial Intelligence (AI) stands as a \u2026 surveys the landscape of \nGenerative AI, encompassing its \u2026 The paper begins by introducing Generative AI\u2019s significance \u2026",
+        "authors": [
+            "KS Kaswan",
+            "JS Dhatterwal",
+            "K Malik\u2026"
+        ],
+        "publishedYear": 2023,
+        "url": "https://ieeexplore.ieee.org/abstract/document/10421601/"
+    },
+    {
+        "title": "Art and the science of generative AI",
+        "abstract": "\u2026 , generative AI is not the harbinger of art\u2019s demise, but rather is a new medium with its own \ndistinct affordances. As a suite of tools used by human creators, generative AI \u2026 , generative AI \u2026",
+        "authors": [
+            "Z Epstein",
+            "A Hertzmann\u2026"
+        ],
+        "publishedYear": 2023,
+        "url": "https://www.science.org/doi/abs/10.1126/science.adh4451"
+    },
+    {
+        "title": "Generative AI and ChatGPT: Applications, challenges, and AI-human collaboration",
+        "abstract": "\u2026 examples of key applications of generative AI, challenges created by generative AI, and the \n\u2026 generative AI. Human-centered AI collaboration is key to effectively utilizing generative AI \u2026",
+        "authors": [
+            "F Fui",
+            "R Zheng",
+            "J Cai",
+            "Francis"
+        ],
+        "publishedYear": 2023,
+        "url": "https://www.tandfonline.com/doi/abs/10.1080/15228053.2023.2233814"
+    },
+    {
+        "title": "Generative artificial intelligence",
+        "abstract": "\u2026 generative AI and provide a distinction between related AI methods \u2026 and applications of the \ngenerative AI value chain and \u2026 challenges of adopting generative AI before concluding with \u2026",
+        "authors": [
+            "L Banh",
+            "G Strobel"
+        ],
+        "publishedYear": 2023,
+        "url": "https://link.springer.com/article/10.1007/s12525-023-00680-1"
+    },
+    {
+        "title": "The promise and peril of generative AI",
+        "abstract": "\u2026 an artificial-intelligence (AI) algorithm called GPT-3, first released in 2020. It is one of the \nmuch-hyped generative AI \u2026 (see \u2018How an AI chatbot edits a manuscript\u2019 at the end of this article). \u2026",
+        "authors": [
+            "A Jo"
+        ],
+        "publishedYear": 2023,
+        "url": "https://www.nature.com/articles/d41586-023-00340-6"
+    },
+    {
+        "title": "Students\u2019 voices on generative AI: perceptions, benefits, and challenges in higher education",
+        "abstract": "This study explores university students\u2019 perceptions of generative AI (GenAI) technologies, such as ChatGPT, in higher education, focusing on familiarity, their willingness to engage, potential benefits and challenges, and effective integration. A survey of 399 undergraduate and postgraduate students from various disciplines in Hong Kong revealed a generally positive attitude towards GenAI in teaching and learning. Students recognized the potential for personalized learning support, writing and brainstorming assistance, and research and analysis capabilities. However, concerns about accuracy, privacy, ethical issues, and the impact on personal development, career prospects, and societal values were also expressed. According to John Biggs\u2019 3P model, student perceptions significantly influence learning approaches and outcomes. By understanding students\u2019 perceptions, educators and policymakers can tailor GenAI technologies to address needs and concerns while promoting effective learning outcomes. Insights from this study can inform policy development around the integration of GenAI technologies into higher education. By understanding students\u2019 perceptions and addressing their concerns, policymakers can create well-informed guidelines and strategies for the responsible and effective implementation of GenAI tools, ultimately enhancing teaching and learning experiences in higher education. This study focuses on the integration of generative AI (GenAI) technologies, like ChatGPT, into higher education settings. University students\u2019 perceptions of generative AI technologies in higher education were explored, including familiarity, potential benefits, and challenges. A survey of 399 undergraduate and postgraduate students from various disciplines in Hong Kong revealed a generally positive attitude towards GenAI in teaching and learning. Insights from this study can inform policy development around the integration of GenAI technologies into higher education, helping to create well-informed guidelines and strategies for responsible and effective implementation. This study focuses on the integration of generative AI (GenAI) technologies, like ChatGPT, into higher education settings. University students\u2019 perceptions of generative AI technologies in higher education were explored, including familiarity, potential benefits, and challenges. A survey of 399 undergraduate and postgraduate students from various disciplines in Hong Kong revealed a generally positive attitude towards GenAI in teaching and learning. Insights from this study can inform policy development around the integration of GenAI technologies into higher education, helping to create well-informed guidelines and strategies for responsible and effective implementation.",
+        "authors": "C. Chan, Wenjie Hu",
+        "publishedYear": "2023",
+        "url": "https://www.semanticscholar.org/paper/Students\u2019-voices-on-generative-AI:-perceptions,-and-Chan-Hu/49b66b980c91f989637b089c2e8284af443aaa25"
+    },
+    {
+        "title": "scGPT: toward building a foundation model for single-cell multi-omics using generative AI",
+        "abstract": "Generative pretrained models have achieved remarkable success in various domains such as language and computer vision. Specifically, the combination of large-scale diverse datasets and pretrained transformers has emerged as a promising approach for developing foundation models. Drawing parallels between language and cellular biology (in which texts comprise words; similarly, cells are defined by genes), our study probes the applicability of foundation models to advance cellular biology and genetic research. Using burgeoning single-cell sequencing data, we have constructed a foundation model for single-cell biology, scGPT, based on a generative pretrained transformer across a repository of over 33 million cells. Our findings illustrate that scGPT effectively distills critical biological insights concerning genes and cells. Through further adaptation of transfer learning, scGPT can be optimized to achieve superior performance across diverse downstream applications. This includes tasks such as cell type annotation, multi-batch integration, multi-omic integration, perturbation response prediction and gene network inference. Pretrained using over 33 million single-cell RNA-sequencing profiles, scGPT is a foundation model facilitating a broad spectrum of downstream single-cell analysis tasks by transfer learning.",
+        "authors": "Haotian Cui, Chloe Wang, Hassaan Maan, Kuan Pang, Fengning Luo, Nan Duan, Bo Wang",
+        "publishedYear": "2024",
+        "url": "https://www.semanticscholar.org/paper/scGPT:-toward-building-a-foundation-model-for-using-Cui-Wang/13dc81fce2c73de67dbe3829a32ec23d663cec89"
+    },
+    {
+        "title": "Generative AI",
+        "abstract": "Recent advancements in generative artificial intelligence (AI) have made it possible for machines to independently produce a variety of creative content. In the context of producing creative content, this essay examines the developments, difficulties, and ethical issues relating to generative AI. It looks into how generative models, such Generative Adversarial Networks (GANs) and Variational Auto encoders (VAEs), can produce realistic artwork like music, literature, and visuals. However, it is frequently discovered that GAN training is extremely unstable and frequently experiences non-convergence, mode collapse, and hyperparameter sensitivity [1]. The technical details of developing and optimizing generative models to produce desired results are covered in detail in this work. It also looks at the difficulties in guaranteeing the variety, creativity, and coherence of generated content. Additionally, the use of generative AI in the creation of original material raises ethical questions. Included in this are concerns about intellectual property, plagiarism, and possible effects on the creative industries. In specifically, the article explores the consequences of employing generative AI for content production in terms of authorship, human creativity, and the possible disruption of traditional creative practices. It also covers issues with fairness, bias, and appropriate application of generative models.",
+        "authors": "S. Feuerriegel, Jochen Hartmann, Christian Janiesch, Patrick Zschech",
+        "publishedYear": "2023",
+        "url": "https://www.semanticscholar.org/paper/Generative-AI-Feuerriegel-Hartmann/ac675900f7c6c14c8488e09a2a6e8525bcf9d45a"
+    },
+    {
+        "title": "Optimizing generative AI by backpropagating language model feedback",
+        "abstract": "Recent breakthroughs in artificial intelligence (AI) are increasingly driven by systems orchestrating multiple large language models (LLMs) and other specialized tools, such as search engines and simulators. So far, these systems are primarily handcrafted by domain experts and tweaked through heuristics rather than being automatically optimized, presenting a substantial challenge to accelerating progress. The development of artificial neural networks faced a similar challenge until backpropagation and automatic differentiation transformed the field by making optimization turnkey. Analogously, here we introduce TextGrad, a versatile framework that performs optimization by backpropagating LLM-generated feedback to improve AI systems. By leveraging natural language feedback to critique and suggest improvements to any part of a system\u2014from prompts to outputs such as molecules or treatment plans\u2014TextGrad enables the automatic optimization of generative AI systems across diverse tasks. We demonstrate TextGrad\u2019s generality and effectiveness through studies in solving PhD-level science problems, optimizing plans for radiotherapy treatments, designing molecules with specific properties, coding, and optimizing agentic systems. TextGrad empowers scientists and engineers to easily develop impactful generative AI systems. Generative artificial intelligence (AI) systems can be optimized using TextGrad, a framework that performs optimization by backpropagating large-language-model-generated feedback; TextGrad enables optimization across diverse tasks, including radiotherapy treatment plans and molecule generation.",
+        "authors": "Mert Yuksekgonul, Federico Bianchi, Joseph Boen, Sheng Liu, Pan Lu, Zhi Huang, Carlos Guestrin, James Zou",
+        "publishedYear": "2025",
+        "url": "https://www.semanticscholar.org/paper/Optimizing-generative-AI-by-backpropagating-model-Yuksekgonul-Bianchi/497d1aaa0f80b90b72e1a7519f1e4d1aefa2e429"
+    },
+    {
+        "title": "GUIDANCE FOR GENERATIVE AI IN EDUCATION AND RESEARCH\" FOR TEACHERS",
+        "abstract": "From the book title is \"Guidance for Generative AI in Education and Research\" for teachers, or this book serves as part of the guidelines for using Generative AI (GenAI) in the fields of education and research. This book was written by W. Holmes and F. Miao in 2023. This book addresses the rapid emergence of publicly available Generative AI tools, with the release of new versions outpacing the establishment of national regulatory frameworks. The lack of national regulations on GenAI in most countries raises concerns about user data privacy and leaves educational institutions unprotected and largely unprepared to scrutinize these tools. UNESCO has issued the first global guidelines on GenAI in education, aiming to support countries in taking immediate action, formulating long-term policies, and developing human capacity to ensure that people can effectively use AI and enhance their work with Generative AI.",
+        "authors": "S. Boonlue",
+        "publishedYear": "2024",
+        "url": "https://www.semanticscholar.org/paper/GUIDANCE-FOR-GENERATIVE-AI-IN-EDUCATION-AND-FOR-Boonlue/3b09a37c82d96afe0634c604664263bd50c141e0"
+    }
+]

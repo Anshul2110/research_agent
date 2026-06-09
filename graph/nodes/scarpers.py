@@ -14,7 +14,7 @@ def scrape_arxiv(state: ResearchState) -> dict:
         "maxItems": 10
     })
     papers = []
-    for item in client.dataset(run["defaultDatasetId"]).iterate_items():
+    for item in client.dataset(run.default_dataset_id).iterate_items():
         papers.append({
             "title": item["title"],
             "abstract": item.get("abstract", ""),
@@ -36,7 +36,7 @@ def scrape_scholar(state: ResearchState) -> dict:
   }
     })
     papers = []
-    for item in client.dataset(run["defaultDatasetId"]).iterate_items():
+    for item in client.dataset(run.default_dataset_id).iterate_items():
         papers.append({
             "title": item["title"],
             "abstract": item.get("abstract", ""),
@@ -54,7 +54,7 @@ def scrape_semantic(state: ResearchState) -> dict:
         "maxResult": 10
     })
     papers = []
-    for item in client.dataset(run["defaultDatasetId"]).iterate_items():
+    for item in client.dataset(run.default_dataset_id).iterate_items():
         papers.append({
             "title": item["title"],
             "abstract": item.get("abstract", ""),
