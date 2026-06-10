@@ -11,14 +11,26 @@ def summarize(state: ResearchState) -> dict:
     """Generate a 3-sentence news-style summary for each paper."""
     summaries = []
     for paper in state["ranked_papers"]:
-        prompt = f"""You are a science journalist. Given this research paper, write a 3-sentence 
-                    news-style summary a non-expert can understand. Lead with the key innovation.
- 
+        prompt =prompt = f"""You are a science journalist writing for a general audience.
+                            Summarize this paper in exactly 3 sentences using ONLY information explicitly stated in the abstract below.
+
+                            Rules:
+                            - Each sentence must be under 20 words
+                            - No jargon — if you must use a technical term, define it inline
+                            - Lead with the real-world impact, not the methodology
+                            - Do NOT infer, extrapolate, or add context not present in the abstract
+                            - If the abstract does not mention real-world impact, describe what the paper does instead
+
+                    
+                    Abstract (your only source of truth):
+                    {paper['abstract']}
+
+
+                    Other metadata (for context):
                     Title: {paper['title']}
-                    Abstract: {paper['abstract']}
                     Authors: {paper['authors']} ({paper['year']})
  
-                    Output only the 3-sentence summary, no preamble."""
+                    Strictly output only the 3-sentence summary."""
         try:
             result = llm.invoke(prompt)
             summaries.append({
@@ -62,6 +74,7 @@ def synthesize_trends(state: ResearchState) -> dict:
                 {bullet_list}
                 
                 Output only the 2 paragraphs, no headings or preamble."""
+    
  
     try:
         result = llm.invoke(prompt)

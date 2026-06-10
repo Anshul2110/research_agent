@@ -179,7 +179,7 @@ def evaluate(queries: List[str] = TEST_QUERIES, sources: list = ["arxiv", "seman
         print(f"  Total latency:        {timings['total_seconds']}s")
 
     ## saving final report as json
-    with open("eval/eval_report.json", "w") as f:
+    with open("eval/eval_report_2.json", "w") as f:
         json.dump(all_results, f, indent=2)
     print(f"\nReport saved to eval/eval_report.json")
 

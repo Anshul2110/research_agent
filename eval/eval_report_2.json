@@ -1,0 +1,102 @@
+[
+  {
+    "query": "retrieval augmented generation",
+    "latency": {
+      "total_seconds": 34.84
+    },
+    "total_raw_papers": 20,
+    "papers_after_dedup": 9,
+    "papers_after_filter": 9,
+    "source_coverage": 1.0,
+    "deduplication_rate": 0.55,
+    "filter_retention_rate": 1.0,
+    "sources_returned": [
+      "arxiv",
+      "semantic"
+    ],
+    "avg_compression_ratio": 14.12,
+    "avg_readability_gain": 7.0,
+    "avg_faithfulness_score": 6.0,
+    "synthesis_coverage": 1.0
+  },
+  {
+    "query": "protein structure prediction",
+    "latency": {
+      "total_seconds": 27.3
+    },
+    "total_raw_papers": 20,
+    "papers_after_dedup": 9,
+    "papers_after_filter": 9,
+    "source_coverage": 1.0,
+    "deduplication_rate": 0.55,
+    "filter_retention_rate": 1.0,
+    "sources_returned": [
+      "arxiv",
+      "semantic"
+    ],
+    "avg_compression_ratio": 15.16,
+    "avg_readability_gain": 6.9,
+    "avg_faithfulness_score": 8.0,
+    "synthesis_coverage": 1.0
+  },
+  {
+    "query": "federated learning privacy",
+    "latency": {
+      "total_seconds": 25.99
+    },
+    "total_raw_papers": 20,
+    "papers_after_dedup": 9,
+    "papers_after_filter": 9,
+    "source_coverage": 1.0,
+    "deduplication_rate": 0.55,
+    "filter_retention_rate": 1.0,
+    "sources_returned": [
+      "arxiv",
+      "semantic"
+    ],
+    "avg_compression_ratio": 12.51,
+    "avg_readability_gain": 8.0,
+    "avg_faithfulness_score": 4.0,
+    "synthesis_coverage": 1.0
+  },
+  {
+    "query": "reinforcement learning from human feedback",
+    "latency": {
+      "total_seconds": 24.28
+    },
+    "total_raw_papers": 20,
+    "papers_after_dedup": 9,
+    "papers_after_filter": 9,
+    "source_coverage": 1.0,
+    "deduplication_rate": 0.55,
+    "filter_retention_rate": 1.0,
+    "sources_returned": [
+      "arxiv",
+      "semantic"
+    ],
+    "avg_compression_ratio": 11.2,
+    "avg_readability_gain": 7.8,
+    "avg_faithfulness_score": 8.0,
+    "synthesis_coverage": 1.0
+  },
+  {
+    "query": "diffusion models image generation",
+    "latency": {
+      "total_seconds": 31.62
+    },
+    "total_raw_papers": 20,
+    "papers_after_dedup": 9,
+    "papers_after_filter": 9,
+    "source_coverage": 1.0,
+    "deduplication_rate": 0.55,
+    "filter_retention_rate": 1.0,
+    "sources_returned": [
+      "arxiv",
+      "semantic"
+    ],
+    "avg_compression_ratio": 12.37,
+    "avg_readability_gain": 8.3,
+    "avg_faithfulness_score": 6.0,
+    "synthesis_coverage": 1.0
+  }
+]
