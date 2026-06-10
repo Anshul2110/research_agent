@@ -1,5 +1,8 @@
 langgraph
-langchain-openai
+langchain
+langchain-groq
 apify-client
 python-dotenv
 streamlit
+pandas
+ 

@@ -1,31 +1,50 @@
-from langgraph.graph import StateGraph, END
+from langgraph.graph import StateGraph, START, END
+from langgraph.types import Send
+
 from graph.state import ResearchState
 from graph.nodes.scarpers import scrape_arxiv, scrape_semantic, scrape_scholar
 from graph.nodes.aggregator import aggregate
-from graph.nodes.summarizer import summarize
+from graph.nodes.filter import filter_relevant
+from graph.nodes.summarizer import summarize, synthesize_trends
+
+
+SCRAPER_MAP = {
+    "arxiv": scrape_arxiv,
+    "semantic": scrape_semantic,
+    "scholar": scrape_scholar,
+}
+
+
+def route_to_scrapers(state: ResearchState):
+    """Fan out to all selected scrapers in parallel using Send API."""
+    return [Send(src, state) for src in state["sources"] if src in SCRAPER_MAP]
+
 
 def build_graph(sources: list[str]):
     g = StateGraph(ResearchState)
 
-    # add nodes conditionally based on selected sources
-    if "arxiv" in sources:
-        g.add_node("arxiv", scrape_arxiv)
-    if "semantic" in sources:
-        g.add_node("semantic", scrape_semantic)
-    if "scholar" in sources:
-        g.add_node("scholar", scrape_scholar)
+    # register only the selected scraper nodes
+    for src in sources:
+        if src in SCRAPER_MAP:
+            g.add_node(src, SCRAPER_MAP[src])
 
     g.add_node("aggregate", aggregate)
+    g.add_node("filter", filter_relevant)
     g.add_node("summarize", summarize)
+    g.add_node("synthesize", synthesize_trends)
 
-    # set entry: all selected scrapers run in parallel (LangGraph handles fan-out)
-    g.set_entry_point("arxiv" if "arxiv" in sources else "semantic")
+    # START → parallel scrapers (true fan-out)
+    g.add_conditional_edges(START, route_to_scrapers)
 
-    # scrapers → aggregator
+    # all scrapers → aggregator
     for src in sources:
-        g.add_edge(src, "aggregate")
+        if src in SCRAPER_MAP:
+            g.add_edge(src, "aggregate")
 
-    g.add_edge("aggregate", "summarize")
-    g.add_edge("summarize", END)
+    # linear pipeline after aggregation
+    g.add_edge("aggregate", "filter")
+    g.add_edge("filter", "summarize")
+    g.add_edge("summarize", "synthesize")
+    g.add_edge("synthesize", END)
 
     return g.compile()
