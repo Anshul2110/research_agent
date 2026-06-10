@@ -14,7 +14,7 @@ with st.sidebar:
     sources = st.multiselect(
         "Sources",
         ["arxiv", "semantic", "scholar"],
-        default=["arxiv", "semantic"],
+        default=["arxiv", "semantic", "scholar"],
         help="Select which databases to scrape. Scholar can be slow or blocked."
     )
     st.divider()
@@ -46,7 +46,7 @@ query = st.text_input(
     placeholder="e.g. multimodal LLMs, CRISPR gene editing, reinforcement learning from human feedback"
 )
 
-search_clicked = st.button("🔍 Search", type="primary", disabled=not query)
+search_clicked = st.button("Search", type="primary", disabled=not query)
 
 if search_clicked and query:
     if not sources:
