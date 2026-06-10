@@ -4,11 +4,11 @@ from graph.graph import build_graph
 
 st.set_page_config(page_title="Research Radar", layout="wide")
 
-# ── header ────────────────────────────────────────────────────────────────────
+## Header
 st.title("Research Radar")
 st.caption("Enter a topic. Get the latest papers as readable news briefs — plus a field overview.")
 
-# ── sidebar controls ──────────────────────────────────────────────────────────
+## sidebar controls 
 with st.sidebar:
     st.header("Settings")
     sources = st.multiselect(
@@ -21,7 +21,7 @@ with st.sidebar:
     st.caption("Results are cached for 1 hour per query to save Apify credits.")
 
 
-# ── cached graph runner ───────────────────────────────────────────────────────
+# cached graph runner
 @st.cache_data(ttl=3600, show_spinner=False)
 def run_research(query: str, sources: tuple) -> dict:
     """
@@ -40,7 +40,7 @@ def run_research(query: str, sources: tuple) -> dict:
     })
 
 
-# ── main search bar ───────────────────────────────────────────────────────────
+## Search Bar
 query = st.text_input(
     "Topic / keyword",
     placeholder="e.g. multimodal LLMs, CRISPR gene editing, reinforcement learning from human feedback"
@@ -64,14 +64,14 @@ if search_clicked and query:
         st.warning("No relevant papers found. Try a different query or add more sources.")
         st.stop()
 
-    # ── trend synthesis hero ──────────────────────────────────────────────────
+    ## trend synthesis box
     synthesis = result.get("trend_synthesis")
     if synthesis:
         st.subheader("State of the Field")
         st.info(synthesis)
         st.divider()
 
-    # ── stats row ─────────────────────────────────────────────────────────────
+    ## summary statistics
     col1, col2, col3 = st.columns(3)
     col1.metric("Papers found", len(summaries))
     col2.metric("Sources searched", len(sources))
@@ -80,7 +80,7 @@ if search_clicked and query:
     if years:
         col3.metric("Most recent year", max(years))
 
-    # ── publication year chart ────────────────────────────────────────────────
+    ## publication year chart
     if years:
         with st.expander("Papers by publication year"):
             year_counts = pd.Series(years).value_counts().sort_index()
@@ -88,14 +88,14 @@ if search_clicked and query:
 
     st.divider()
 
-    # ── source badge config ───────────────────────────────────────────────────
+    ## source labels 
     source_labels = {
         "arxiv":    ("🔴", "ArXiv"),
         "semantic": ("🔵", "Semantic Scholar"),
         "scholar":  ("🟢", "Google Scholar"),
     }
 
-    # ── paper cards ──────────────────────────────────────────────────────────
+    ## paper summary cards
     st.subheader(f"{len(summaries)} papers")
 
     for item in summaries:
