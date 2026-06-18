@@ -2,7 +2,7 @@ from langgraph.graph import StateGraph, START, END
 from langgraph.types import Send
 
 from graph.state import ResearchState
-from graph.nodes.scarpers import scrape_arxiv, scrape_semantic, scrape_scholar
+from graph.nodes.scrapers import scrape_arxiv, scrape_semantic, scrape_scholar
 from graph.nodes.aggregator import aggregate
 from graph.nodes.filter import filter_relevant
 from graph.nodes.summarizer import summarize, synthesize_trends
