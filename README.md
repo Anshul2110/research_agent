@@ -62,7 +62,7 @@ Full reports: [`eval/eval_report.json`](eval/eval_report.json), [`eval/eval_repo
 ### Run with Docker (recommended)
 
 ```bash
-git clone https://github.com/yourusername/research_agent.git
+git clone https://github.com/Anshul2110/research_agent.git
 cd research_agent
 
 docker build -t research-radar .
@@ -78,7 +78,7 @@ Open `http://localhost:8501`.
 ### Run locally with Python
 
 ```bash
-git clone https://github.com/yourusername/research_agent.git
+git clone https://github.com/Anshul2110/research_agent.git
 cd research_agent
 
 python -m venv venv
