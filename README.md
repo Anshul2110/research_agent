@@ -75,20 +75,6 @@ docker run -p 8501:8501 \
 
 Open `http://localhost:8501`.
 
-### Run locally with Python
-
-```bash
-git clone https://github.com/Anshul2110/research_agent.git
-cd research_agent
-
-python -m venv venv
-source venv/bin/activate        # Windows: venv\Scripts\activate
-
-pip install -r requirements.txt
-
-cp .env.example .env            # then fill in your API keys
-streamlit run app.py
-```
 
 ### Run the evaluation suite
 
